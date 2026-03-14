@@ -7,20 +7,44 @@
 </head>
 
 <body>
-    <div class="page-bg" id="page-bg">Page Background</div>
-        <main class="container" id="container">Main Content</main>
-            <header class="header">Header</header>
-            <div class="form-wrapper">Form Wrapper</div>
-                <form id="feedback-form" novalidate></form>
+    <div id="main-container">
+        <h1>Your Feedback Matters!</h1>
+        <p>We would love to hear your thoughts on our website. Please take a moment to share your feedback with us.</p>
+        
+            <form id="feedback-form">
+                
+                <div class="field-group">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="username" name="username" class="field-input" placeholder="What's your name?" maxlength="100">
+                    <span class="char-count" id="count-name">0 / 50</span>
+                </div>
 
-                    <div class="fields-group" id="fields-group">Field Group</div>
-                        <div class="field-block" data-field="name">Name Field</div>
-                        <div class="field-block" data-field="email">Email Field</div>
-                        <div class="field-block" data-field="comments">Message Field</div>
-                            <label for="comments" class="field-label">Message</label>
-                            <div class="field-input-wrapper"><input type="text" id="comments" name="comments"></div>
-                            <div class="input-wrap textarea-wrap" data-tooltip="Share thoughts, ideas, bugs, praise — anything helps." data-field="comments">
-             
+                <div class="field-group">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" class="field-input" placeholder="What's your email?" maxlength="100" required><br><br>
+                    <span class="char-count" id="count-email">0 / 50</span>
+                </div>
+
+                <div class="field-group">
+                    <label for="feedback">Feedback:</label><br>
+                    <div class="input-wrap textarea-wrap" data-tooltip="Share thoughts, ideas, bugs, praise — anything helps." data-field="comments">
+                        <textarea id="comments" name="comments" class="field-input" placeholder="What's on your mind?" rows="5" maxlength="500"></textarea>
+                        <span class="char-count" id="count-comments">0 / 500</span>
+                    </div>
+
+                    <button type="submit">Submit Feedback</button>
+                     <p id="error-message"></p>
+            </form>
+
+            <div id="feedback-display">
+                <h3>Recent Feedback</h3>
+            </div>
+    </div>
+
+    <div id="tooltip" class="hidden">
+    </div>
+                    
+
     <script src="script.js"></script>
 </body>
 </html>
