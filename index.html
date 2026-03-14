@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,15 +16,15 @@
                 
                 <div class="field-group">
                     <label for="name">Name:</label><br>
-                    <input type="text" id="username" name="username" class="field-input" placeholder="What's your name?" maxlength="100">
+                    <input type="text" id="username" name="username" class="field-input" placeholder="What's your name?" maxlength="50" required>
                     <span class="char-count" id="count-name">0 / 50</span>
-                </div>
+                </div><br>
 
                 <div class="field-group">
                     <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" class="field-input" placeholder="What's your email?" maxlength="100" required><br><br>
+                    <input type="email" id="email" name="email" class="field-input" placeholder="What's your email?" maxlength="50" required>
                     <span class="char-count" id="count-email">0 / 50</span>
-                </div>
+                </div><br>
 
                 <div class="field-group">
                     <label for="feedback">Feedback:</label><br>
@@ -36,9 +37,7 @@
                      <p id="error-message"></p>
             </form>
 
-            <div id="feedback-display">
-                <h3>Recent Feedback</h3>
-            </div>
+            
     </div>
 
     <div id="tooltip" class="hidden">
@@ -46,5 +45,6 @@
                     
 
     <script src="script.js"></script>
+    <script src="cp_1.js"></script>
 </body>
 </html>

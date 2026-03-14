@@ -3,7 +3,7 @@ let feedbackDisplay = document.getElementById('feedback-display');
 let tooltip = document.getElementById('tooltip');
 let errorMsg = document.getElementById('error-message');
 
-// Form submission
+// Count characters in real-time
 form.addEventListener('input', (e) => {
     if (e.target.matches('input, textarea')) {
         const countSpan = e.target.nextElementSibling;
