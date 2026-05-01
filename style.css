@@ -12,11 +12,12 @@ body {
     background: #333;
     color: white;
     padding: 6px 12px;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 0.8rem;
     pointer-events: none; /* Prevents the tooltip from flickering under the mouse */
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
 }
 
 .hidden {
@@ -43,10 +44,34 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 88%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
+    border-radius: 6px;
+
 }
 
 textarea{
     height: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 6px;
+}
+
+#feedback-display {
+    margin-top: 30px;
+}
+.feedback-entry {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.feedback-entry p {
+    margin-top: 5px ;
+    color: rgb(159, 159, 188)
+}
+.feedback-entry hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #ccc;
 }

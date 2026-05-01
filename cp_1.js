@@ -60,8 +60,10 @@ form.addEventListener('submit', (e) => {
     form.reset();
     
     // Reset char counts
-    document.querySelectorAll('.char-count').forEach(s => s.textContent = "0 characters");
+    document.querySelectorAll('.char-count').forEach(s => s.textContent = "0 / 500");
 });
+
+
 
 // Function to append feedback to the display area
 function appendFeedback(name, email, comments) {

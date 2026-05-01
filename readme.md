@@ -1,1 +1,1 @@
-A feedback page where users can input their Name, Email, (Both up to a limit of 50 characters) and up to 500 characters worth of written feedback. Error pop up messages occur when either of the test boxes are empty when feedback is submitted.
+A feedback page where users can input their Name, Email, (Both up to a limit of 50 characters) and up to 500 characters worth of written feedback. Error pop up messages occur when either of the test boxes are empty when feedback is submitted. A previous feedback section is included for other website viewers to read past feedback. 
