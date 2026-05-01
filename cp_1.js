@@ -1,3 +1,6 @@
+// This script handles character counting, tooltips, click events, and form submission for a feedback form.
+// It listens for input events to update character counts, mouseover events to show tooltips, and click events to log background clicks while preventing them when clicking inside the form. It also validates form submission and displays feedback entries.
+
 let form = document.getElementById('feedback-form');
 let feedbackDisplay = document.getElementById('feedback-display');
 let tooltip = document.getElementById('tooltip');
@@ -60,6 +63,7 @@ form.addEventListener('submit', (e) => {
     document.querySelectorAll('.char-count').forEach(s => s.textContent = "0 characters");
 });
 
+// Function to append feedback to the display area
 function appendFeedback(name, email, comments) {
     const entry = document.createElement('div');
     entry.className = 'feedback-entry';
